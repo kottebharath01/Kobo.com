@@ -60,11 +60,12 @@ img, .ph{
 .topbar .flag{
   margin-right: 4px;
 }
-.topbar a:hover, .topbar .lang:hover{
-  color: #1266DB;
-}
 
-/* ---------- Header ---------- */
+
+
+
+
+
 header.main{
   border-bottom: 1px solid #e4e0df;
   padding: 14px 0;
@@ -88,9 +89,7 @@ header.main .wrap{
   overflow: hidden;
   height: 50px;
 }
-.search-bar:hover, .search-bar:focus-within{
-  box-shadow: 0 0 0 3px rgba(91, 33, 64, .12);
-}
+
 .search-bar input{
   flex: 1;
   border: none;
@@ -118,7 +117,6 @@ header.main .wrap{
   font-size: 16px;
   color: #6b6b6b;
   cursor: pointer;
-  transition: color .15s ease, transform .15s ease;
 }
 .header-icons .icon-item .glyph{
   font-size: 28px;
@@ -139,10 +137,7 @@ header.main .wrap{
   white-space: nowrap;
   display: inline-block;
 }
-.btn-primary:hover{
-  background: #1266DB;
-  transform: translateY(-1px);
-}
+
 .signin-line{
   font-size: 16px;
   color: #1d1d1d;
@@ -152,186 +147,206 @@ header.main .wrap{
   font-weight: 700;
   text-decoration: underline;
 }
-.signin-line a:hover{
-  color: #1266DB;
+
+
+
+.cat-nav{
+    background:#fff;
+    border-bottom:1px solid #e6e6e6;
+    position:relative;
+    z-index:100;
 }
 
-/* ---------- Category nav + mega dropdowns ---------- */
-nav.cat-nav{
-  border-bottom: 1px solid #e4e0df;
-  background: #fff;
-  position: relative;
+.cat-nav .wrap{
+    max-width:1150px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
-nav.cat-nav .wrap{
-  display: flex;
-  gap: 4px;
-  height: 52px;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 600;
-}
+
 .nav-item{
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: static;
-}
-.nav-item > a{
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  height: 100%;
-  padding: 0 16px;
-  color: #1d1d1d;
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
-}
-.nav-item > a span{
-  font-size: 11px;
-  transition: transform .15s ease;
+    position:relative;
 }
 
-/* hover state (mirrors the "open" look in the screenshot) */
-.nav-item:hover > a,
-.nav-item.active > a{
-  color: #C1272D;
-  background: #FBEAEA;
+.nav-item>a{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    padding:18px 20px;
+    text-decoration:none;
+    color:#111;
+    font-size:17px;
+    font-weight:600;
+    transition:.25s;
 }
-.nav-item:hover > a::after,
-.nav-item.active > a::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 3px;
-  background: #C1272D;
+
+.nav-item>a span{
+    font-size:11px;
+    transition:.3s;
 }
-.nav-item:hover > a span,
-.nav-item.active > a span{
-  transform: rotate(180deg);
+
+.nav-item:hover>a{
+    background:#f9eceb;
+    color:#b00000;
 }
+
+.nav-item:hover>a span{
+    transform:rotate(180deg);
+}
+
+
 
 .mega-panel{
     position:absolute;
     top:100%;
     left:0;
-    width:100%;
+    width:1150px;
     background:#fff;
-    z-index:9999;
+    box-shadow:0 8px 24px rgba(0,0,0,.15);
     display:none;
+    padding:30px 20px;
 }
 
 .nav-item:hover .mega-panel{
     display:block;
 }
-.mega-panel .wrap{
-  display: flex;
-  gap: 80px;
-  padding: 36px 24px 40px;
-  align-items: flex-start;
-}
-.mega-left{
-  flex: 2.2;
-}
-.mega-right{
-  flex: 1;
-  border-left: 1px solid #e0dcdb;
-  padding-left: 48px;
-}
-.pill-grid{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 22px;
-}
-.pill{
-  background: #F2F0EF;
-  border-radius: 24px;
-  padding: 12px 22px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #1d1d1d;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background .15s ease, color .15s ease;
-}
-.pill:hover{
-  background: #C1272D;
-  color: #fff;
-}
-.mega-right a.mega-link, .mega-left a.mega-link{
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #1d1d1d;
-  text-decoration: none;
-  transition: color .15s ease;
-}
-.mega-right a.mega-link:hover, .mega-left a.mega-link:hover{
-  color: #C1272D;
-}
-.browse-all{
-  color: #C1272D;
-  font-weight: 700;
-  font-size: 17px;
-  text-decoration: none;
-}
-.browse-all:hover{
-  text-decoration: underline;
+
+.mega-panel>.wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
 }
 
-/* eReaders & Apps panel specifics */
+
+.mega-left{
+    flex:3;
+}
+
+.pill-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px 14px;
+}
+
+.pill{
+    text-decoration:none;
+    color:#111;
+    background:#f3f3f3;
+    padding:14px 22px;
+    border-radius:999px;
+    font-size:16px;
+    transition:.25s;
+}
+
+.pill:hover{
+    background:#e5e5e5;
+}
+
+
+.mega-right{
+    flex:1;
+    border-left:1px solid #e4e4e4;
+    padding-left:70px;
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+.mega-link{
+    text-decoration:none;
+    color:#111;
+    font-size:17px;
+}
+
+.mega-link:hover{
+    color:#b00000;
+}
+
+
+
+.browse-all{
+    display:inline-block;
+    margin-top:45px;
+    text-decoration:none;
+    color:#b00000;
+    font-size:17px;
+    font-weight:700;
+}
+
+.browse-all:hover{
+    text-decoration:underline;
+}
+
+
 .ereader-cols{
-  display: flex;
-  gap: 80px;
+    display:flex;
+    gap:70px;
 }
-.device-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px 40px;
-  margin-bottom: 18px;
-}
-.device-item{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 16px;
-  font-weight: 600;
-}
-.device-icon{
-  width: 32px;
-  height: 42px;
-  border-radius: 4px;
-  background: linear-gradient(135deg, #e2e2e2, #cfcfcf);
-  flex-shrink: 0;
-}
+
 .eyebrow-label{
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: .08em;
-  color: #1d1d1d;
-  margin-bottom: 14px;
-  text-transform: uppercase;
+    color:#999;
+    font-size:13px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    font-weight:700;
 }
+
+.device-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.device-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:16px;
+}
+
+.device-icon{
+    width:26px;
+    height:42px;
+    border:2px solid #333;
+    border-radius:5px;
+}
+
 
 .sub-links{
-  border-bottom: 1px solid #e4e0df;
+    background:#fff;
+    border-bottom:1px solid #e6e6e6;
 }
-.sub-links .wrap{
-  display: flex;
-  gap: 32px;
-  height: 40px;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 600;
-}
-.sub-links a{ color: #1d1d1d; text-decoration: none; }
-.sub-links a:hover{ color: #C1272D; }
 
-/* ---------- Hero banner ---------- */
+.sub-links .wrap{
+    max-width:1150px;
+    margin:0 auto;
+    padding:0 24px;   
+    display:flex;
+    align-items:center;
+    gap:25px;
+    height:50px;
+}
+
+.sub-links a{
+    text-decoration:none;
+    color:#333;
+    font-size:17px;
+    white-space:nowrap;
+}
+
+.sub-links a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+
+
+
+
 .hero{
   background: linear-gradient(120deg, #1266DB, #1266DB);
   color: #fff;
@@ -394,7 +409,10 @@ nav.cat-nav .wrap{
   box-shadow: 0 10px 22px rgba(0, 0, 0, .35);
 }
 
-/* ---------- Section titles ---------- */
+
+
+
+
 section{
   padding: 38px 0;
 }
@@ -415,7 +433,10 @@ section{
   transform: translateX(4px);
 }
 
-/* ---------- Book grid ---------- */
+
+
+
+
 
 .grid5{
   display: flex;
@@ -424,11 +445,11 @@ section{
   padding-bottom: 6px;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;       /* Firefox */
-  -ms-overflow-style: none;    /* old Edge / IE */
+  scrollbar-width: none;       
+  -ms-overflow-style: none;    
 }
 .grid5::-webkit-scrollbar{
-  display: none;               /* Chrome / Safari */
+  display: none;               
 }
 .carousel{
   position: relative;
@@ -453,7 +474,7 @@ section{
   visibility: hidden;
   transition: background .15s ease, opacity .15s ease, visibility .15s ease;
 }
-/* Arrows stay hidden until the mouse is over the carousel */
+
 .carousel:hover .car-arrow{
   opacity: 1;
   visibility: visible;
@@ -494,9 +515,6 @@ section{
   -webkit-box-orient: vertical;
   overflow: hidden;
   transition: color .15s ease;
-}
-.book-card:hover .book-title{
-  color: #1266DB;
 }
 .book-author{
   font-size: 16px;
@@ -540,7 +558,11 @@ section{
   text-decoration: underline;
 }
 
-/* ---------- Mid promo strip (read anywhere) ---------- */
+
+
+
+
+
 .promo-strip{
   background: #f4f1f0;
   display: flex;
@@ -606,7 +628,12 @@ section{
   text-decoration: underline;
 }
 
-/* ---------- Featured banner (single book spotlight) ---------- */
+
+
+
+
+
+
 .feature-heading{
   font-size: 16px;
   font-weight: 800;
@@ -687,7 +714,11 @@ section{
   background: #2f6f5e;
 }
 
-/* ---------- CTA / newsletter block ---------- */
+
+
+
+
+
 .cta-block{
   text-align: center;
   padding: 60px 40px;
@@ -722,7 +753,11 @@ section{
   transform: translateY(-2px);
 }
 
-/* ---------- FAQ (pure HTML/CSS accordion via <details>) ---------- */
+
+
+
+
+
 .faq{
   padding: 40px 0;
 }
@@ -758,9 +793,7 @@ section{
 .faq-item[open] summary .arrow{
   transform: rotate(90deg);
 }
-.faq-item summary:hover{
-  color: #1266DB;
-}
+
 .faq-answer{
   padding: 0 4px 18px 30px;
   font-size: 16px;
@@ -768,7 +801,11 @@ section{
   line-height: 1.6;
 }
 
-/* ---------- Footer ---------- */
+
+
+
+
+
 footer{
   background: #f4f1f0;
   font-size: 16px;
@@ -800,7 +837,10 @@ footer{
   color: #1d1d1d;
 }
 
-/* Stay Connected social links */
+
+
+
+
 .social-item{
   display: flex;
   align-items: center;
@@ -837,7 +877,10 @@ footer{
   background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
 }
 
-/* Get the Free App badges */
+
+
+
+
 .app-badge{
   display: flex;
   align-items: center;
