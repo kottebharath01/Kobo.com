@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="links">
+        <a href="#"><span class="flag">🇮🇳</span>Change Country</a>
+        <span class="sep">|</span>
+        <a href="#" class="lang">English ▾</a>
+        <span class="sep">|</span>
+        <a href="#">Gift Cards</a>
+        <span class="sep">|</span>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="main">
+    <div class="wrap">
+      <div class="logo">BookHub</div>
+      <form class="search-bar">
+        <input type="text" placeholder="Search on BookHub">
+        <button type="submit">&#128269;</button>
+      </form>
+      <div class="header-icons">
+        <div class="icon-item"><span class="glyph">&#9825;</span>Wishlist</div>
+        <div class="icon-item"><span class="glyph">&#128717;</span>Cart</div>
+        <div class="account-block">
+          <a href="#" class="btn-primary">Create account</a>
+          <div class="signin-line">Have an account? <a href="https://authorize.kobo.com/in/en/Signin?returnUrl=https%3A%2F%2Fwww.kobo.com%2F">Sign in</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<!-- ============ CATEGORY NAV + MEGA MENUS ============ -->
+<nav class="cat-nav">
+  <div class="wrap">
+
+    <!-- eBooks -->
+    <div class="nav-item active">
+      <a href="#">eBooks<span>&#9662;</span></a>
+      <div class="mega-panel">
+        <div class="wrap">
+          <div class="mega-left">
+            <div class="pill-grid">
+              <a href="#" class="pill">Young Adult - YA</a>
+              <a href="#" class="pill">Science Fiction &amp; Fantasy</a>
+              <a href="#" class="pill">Biography &amp; Memoir</a>
+              <a href="#" class="pill">Business &amp; Finance</a>
+              <a href="#" class="pill">Nonfiction</a>
+              <a href="#" class="pill">Mystery &amp; Suspense</a>
+              <a href="#" class="pill">Comics, Graphic Novels, &amp; Manga</a>
+              <a href="#" class="pill">Kids</a>
+              <a href="#" class="pill">Romance</a>
+              <a href="#" class="pill">Fiction &amp; Literature</a>
+            </div>
+            <a href="#" class="browse-all">Browse all eBook categories</a>
+          </div>
+          <div class="mega-right">
+            <a href="#" class="mega-link">Recommended for You</a>
+            <a href="#" class="mega-link">Best Selling</a>
+            <a href="#" class="mega-link">Free eBooks</a>
+            <a href="#" class="mega-link">New Releases</a>
+            <a href="#" class="mega-link">Bestsellers</a>
+            <a href="#" class="mega-link">Books on Films and TV</a>
+            <a href="#" class="browse-all">Browse all eBooks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audiobooks -->
+    <div class="nav-item">
+      <a href="#">Audiobooks<span>&#9662;</span></a>
+      <div class="mega-panel">
+        <div class="wrap">
+          <div class="mega-left">
+            <div class="pill-grid">
+              <a href="#" class="pill">Young Adult - YA</a>
+              <a href="#" class="pill">Science Fiction &amp; Fantasy</a>
+              <a href="#" class="pill">Biography &amp; Memoir</a>
+              <a href="#" class="pill">Business &amp; Finance</a>
+              <a href="#" class="pill">Nonfiction</a>
+              <a href="#" class="pill">Mystery &amp; Suspense</a>
+              <a href="#" class="pill">Kids</a>
+              <a href="#" class="pill">Romance</a>
+              <a href="#" class="pill">Fiction &amp; Literature</a>
+            </div>
+            <a href="#" class="browse-all">Browse all audiobook categories</a>
+          </div>
+          <div class="mega-right">
+            <a href="#" class="mega-link">Best Selling</a>
+            <a href="#" class="mega-link">Audiobook Deals</a>
+            <a href="#" class="mega-link">From Screen to Audio</a>
+            <a href="#" class="browse-all">Browse all Audiobooks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BookHub Plus (no dropdown) -->
+    <div class="nav-item">
+      <a href="#">BookHub Plus</a>
+    </div>
+
+    <!-- eReaders & Apps -->
+    <div class="nav-item">
+      <a href="#">eReaders &amp; Apps<span>&#9662;</span></a>
+      <div class="mega-panel">
+        <div class="wrap ereader-cols">
+          <div class="mega-left" style="flex:2;">
+            <div class="eyebrow-label">Ereaders</div>
+            <div class="device-grid">
+              <div class="device-item"><span class="device-icon"></span>Reader Mini BW</div>
+              <div class="device-item"><span class="device-icon"></span>Reader Sage</div>
+              <div class="device-item"><span class="device-icon"></span>Reader Colour</div>
+              <div class="device-item"><span class="device-icon"></span>Reader Elipsa 2E</div>
+              <div class="device-item"><span class="device-icon"></span>Reader Libra Colour</div>
+            </div>
+            <a href="#" class="mega-link">Certified Refurbished</a>
+            <a href="#" class="mega-link">All eReaders</a>
+            <a href="#" class="mega-link">All About eReaders</a>
+            <a href="#" class="mega-link">Where To Buy</a>
+            <a href="#" class="mega-link">Accessories</a>
+          </div>
+          <div class="mega-right">
+            <div class="eyebrow-label">Apps</div>
+            <a href="#" class="mega-link">Android</a>
+            <a href="#" class="mega-link">Apple</a>
+            <a href="#" class="mega-link">Web Reader</a>
+            <a href="#" class="browse-all">Learn More About Apps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<div class="sub-links">
+  <div class="wrap">
+    <a href="#">Bestselling eBooks</a>
+    <a href="#">BookHub Plus: Recent Additions</a>
+    <a href="#">Audiobooks under &#8377;400</a>
+    <a href="#">Exclusive from BookHub</a>
+  </div>
+</div>
+
+
+  <!-- ============ HERO ============ -->
+  <section>
+    <div class="wrap">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">Explore Now</div>
+          <h2>We've made room for the authors you love</h2>
+          <p>Listen endlessly to books from Rebecca Yarros, Pierce Brown, Sarah J. Maas and so much more</p>
+          <a href="#" class="btn-light">View New Audiobooks</a>
+        </div>
+        <div class="hero-img-wrap">
+          <div class="hero-img-grid">
+            <div class="hero-cell"><img src="images/hero1.jpg" alt="Fixation book cover"></div>
+            <div class="hero-cell"><img src="images/hero2.jpg" alt="Fixation book cover"></div>
+            <div class="hero-cell"><img src="images/hero3.jpg" alt="Fixation book cover"></div>
+            <div class="hero-cell"><img src="images/hero4.jpg" alt="Fixation book cover"></div>
+            <div class="hero-cell"><img src="images/hero5.jpg" alt="Fixation book cover"></div>
+            <div class="hero-cell"><img src="images/hero6.jpg" alt="Fixation book cover"></div>
+            <div class="hero-cell"><img src="images/hero7.jpg" alt="Fixation book cover"></div>
+            <div class="hero-cell"><img src="images/hero8.jpg" alt="Fixation book cover"></div>
+            <div class="hero-cell"><img src="images/hero9.jpg" alt="Fixation book cover"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEST-SELLING & POPULAR ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">Best-selling and Popular eBooks <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#bestselling-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="bestselling">
+        <div class="book-card" id="bestselling-start">
+          <div class="book-cover"><img src="images/age-of-ambition.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Age of Ambition</div>
+          <div class="book-author">Evan Osnos</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹375.46</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/sea-legs-15.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Sea Legs</div>
+          <div class="book-author">Eleanor Dooks, Oona Dooks</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹984.21</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/the-dude-and-the-zen-master-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Dude and the Zen Master</div>
+          <div class="book-author">Jeff Bridges, Bernie Glassman</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹375.09</div>
+          <div class="book-tag">Free with BookHub Plus</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/the-women-in-white-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Women in White</div>
+          <div class="book-author">Sarah Pekkanen</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹1193.74</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/harry-potter-and-the-philosopher-s-stone-3.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Harry Potter and the Philosopher's Stone</div>
+          <div class="book-author">J.K. Rowling</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹472.68</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/pachinko-14.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Pachinko</div>
+          <div class="book-author">Min Jin Lee</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹407.68</div>
+        </div>
+        <div class="see-full-cell" id="bestselling-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#bestselling-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROMO STRIP (read anywhere) ============ -->
+  <section>
+    <div class="wrap">
+      <div class="promo-strip">
+        <div class="promo-copy">
+          <h2>Read anywhere, any time, on any device</h2>
+          <p>Your next read awaits with a BookHub eReader, the BookHub App, or on a BookHub Web Reader.</p>
+          <a href="#" class="btn-outline">Why eReading?</a>
+        </div>
+        <div class="promo-img-wrap"><div class="promo-img"><img src="images/verity-17.jpg" alt="Fixation book cover"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR BEST-SELLERS ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">Our best-sellers <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#bestsellers-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="bestsellers">
+        <div class="book-card" id="bestsellers-start">
+          <div class="book-cover"><img src="images/atomic-habits-an-easy-and-proven-way-to-build-good-habits-and-break-bad-ones.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Atomic Habits</div>
+          <div class="book-author">James Clear</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹420.40</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/verity-17.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Verity</div>
+          <div class="book-author">Colleen Hoover</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹601.06</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/lessons-in-chemistry-8.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Lessons in Chemistry</div>
+          <div class="book-author">Bonnie Garmus</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹175.46</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/fourth-wing-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Fourth Wing</div>
+          <div class="book-author">Rebecca Yarros</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹301.65</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/making-it-modern-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Making it Modern</div>
+          <div class="book-author">Linda Nochlin</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹307.68</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/complementary-and-integrative-treatments-in-psychiatric-practice.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Complementary and Integrative Treatments in Psychiatric Practice</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹307.68</div>
+        </div>
+        <div class="see-full-cell" id="bestsellers-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#bestsellers-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE BANNER 1 ============ -->
+  <section>
+    <div class="wrap">
+      <div class="feature-heading">Discover the world as you've never seen it before.</div>
+      <div class="feature-banner feat1">
+        <div class="cover-frame"><div class="cover"><img src="images-banner/an-immense-world-4.jpg" alt="Fixation book cover"></div></div>
+        <div class="info">
+          <h3>A Boundless World</h3>
+          <div class="by">By Ed Stone</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="desc">A globe-spanning novel that follows one unforgettable migratory season, tracing the invisible threads connecting distant lives across continents.</div>
+          <div class="price">₹600.84</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POPULAR IN HINDI ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">Popular in Hindi <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#hindi-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="hindi">
+        <div class="book-card" id="hindi-start">
+          <div class="book-cover"><img src="images/gunahon-ka-devta-hindi-novel.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Gunahon Ka Devta (Hindi Novel)</div>
+          <div class="book-author">Dharmaveer Bharti</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹192.64</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/naacho-jivan-hai-naach-hindi-wisdom-bites.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Naacho Jivan Hai Naach (Hindi wisdom bites)</div>
+          <div class="book-author">Osho</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹300.99</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/jay-17.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Jay</div>
+          <div class="book-author">Devdutt Pattanaik</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹300.99</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/bodh-kathayen-hindi-wisdom-stories.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Bodh Kathayen (Hindi Wisdom Stories)</div>
+          <div class="book-author">Vinoba Bhave</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹188.64</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/kai-chaand-the-sar-e-aasman-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Kai Chaand The Sar-e-aasman</div>
+          <div class="book-author">Shamsur Rahman Farooqui</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹250.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/eidgah-hindi.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Eidgah (ईदगाह)</div>
+          <div class="book-author">Premchand</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹250.00</div>
+        </div>
+        <div class="see-full-cell" id="hindi-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#hindi-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEW & HOT AUDIOBOOKS ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">New &amp; Hot Audiobooks <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#newaudio-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="newaudio">
+        <div class="book-card" id="newaudio-start">
+          <div class="book-cover"><img src="images-new/for-real-16.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">For Real</div>
+          <div class="book-author">Alexis Hall</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹1,098.03</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images/eidgah-hindi.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Flickerstate</div>
+          <div class="book-author">F. A. Davidson</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹2,500.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-new/everything-comes-back-to-you-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Everything Comes Back to You</div>
+          <div class="book-author">Jackie Khalilieh</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹1,499.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-new/tradwife-2.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Tradwife</div>
+          <div class="book-author">Michelle Brandon</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹1,643.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-new/when-lemons-give-you-life-2.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">When Lemons Give You Life</div>
+          <div class="book-author">Anna Johnston</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹1,399.00</div>
+          <div class="book-tag">or Free with BookHub Plus</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-new/a-thousand-little-goodbyes-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">A Thousand Little Goodbyes</div>
+          <div class="book-author">Lucy Gilmore</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹1,399.00</div>
+          <div class="book-tag">or Free with BookHub Plus</div>
+        </div>
+        <div class="see-full-cell" id="newaudio-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#newaudio-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POPULAR TITLES FOR LESS ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">Popular Titles for Less <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#titlesforless-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="titlesforless">
+        <div class="book-card" id="titlesforless-start">
+          <div class="book-cover"><img src="images-popular/the-delectable-tart.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Delectable Tart</div>
+          <div class="book-author">Merry Farmer</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹0.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-popular/the-maiden-at-midnight.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Maiden At Midnight</div>
+          <div class="book-author">Kate Harper</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹99.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-popular/the-complete-works-of-edgar-wallace.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Complete Works of Edgar Wallace</div>
+          <div class="book-author">Edgar Wallace</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹0.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-popular/talks-with-swami-vivekananda.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Talks with Swami Vivekananda</div>
+          <div class="book-author">Sharat Chandra Chakravarty</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹99.99</div>
+          <div class="book-tag">or Free with BookHub Plus</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-popular/why-i-am-an-atheist.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Why I am an Atheist</div>
+          <div class="book-author">Bhagt Singh</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹65.37</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-popular/24-open-secrets.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">24 Open Secrets</div>
+          <div class="book-author">Akarsha Alapati</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹65.37</div>
+        </div>
+        <div class="see-full-cell" id="titlesforless-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#titlesforless-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ READ THE FILM OR SERIES ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">Read the film or series <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#filmseries-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="filmseries">
+        <div class="book-card" id="filmseries-start">
+          <div class="book-cover"><img src="images-series/pachinko-14.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Pachinko</div>
+          <div class="book-author">Min Jin Lee</div>
+          <div class="book-rating">★★★☆☆</div>
+          <div class="book-price">₹375.46</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-series/the-other-side-of-midnight-the-master-of-the-unexpected.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Other Side of Midnight</div>
+          <div class="book-author">Sidney Sheldon</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹359.99</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-series/fifty-shades-of-grey-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Fifty Shades of Grey</div>
+          <div class="book-author">E L James</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹425.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-series/seeing-stars-13.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Seeing Stars</div>
+          <div class="book-author">J. Sterling</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="book-price">₹425.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-series/gone-girl.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Gone Girl</div>
+          <div class="book-author">Gillian Flynn</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹340.25</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-series/the-cuckoo-s-calling-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Cuckoo's Calling</div>
+          <div class="book-author">Robert Galbraith</div>
+          <div class="book-rating">★★★★★</div>
+          <div class="book-price">₹340.25</div>
+        </div>
+        <div class="see-full-cell" id="filmseries-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#filmseries-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE BANNER 2 ============ -->
+  <section>
+    <div class="wrap">
+      <div class="feature-heading">Arundhati Roy's incredible follow-up</div>
+      <div class="feature-banner feat2">
+        <div class="cover-frame"><div class="cover"><img src="images-banner/ministry-of-utmost-happiness-1.jpg" alt="Fixation book cover"></div></div>
+        <div class="info">
+          <h3>The Weight of Utmost Joy</h3>
+          <div class="by">By Aparna Roy</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="desc">A sweeping follow-up that returns to a river town years after a family's fortunes changed overnight, tracing how the past still shapes every doorway.</div>
+          <div class="price">₹343.96</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EBOOKS IN INDIAN LANGUAGES ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">eBooks in Indian Languages <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#indianlang-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="indianlang">
+        <div class="book-card" id="indianlang-start">
+          <div class="book-cover"><img src="images-eBook/khirer-putul-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Khirer Putul (ক্ষীরের পুতুল)</div>
+          <div class="book-author">Abanindranath Tagore</div>
+          <div class="book-price">₹72.54</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-eBook/gupi-gayen-bagha-bayen.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Gupi Gayen Bagha Bayen</div>
+          <div class="book-author">Upendrakishore Ray Chowdhury</div>
+          <div class="book-price">₹72.54</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-eBook/nil-bosona-sundari.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Nil Bosona Sundari (নীল বসনা সুন্দরী)</div>
+          <div class="book-author">Panchkari Dey</div>
+          <div class="book-price">₹228.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-eBook/banalata-sen-by-jibananda-das.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Banalata Sen - by Jibananda Das</div>
+          <div class="book-author">IndicPub</div>
+          <div class="book-price">₹85.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-eBook/sukumar-roy-s-galpo-sankalan.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Sukumar Roy’s Galpo Sankalan</div>
+          <div class="book-author">Sukumar Roy</div>
+          <div class="book-price">₹107.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-eBook/devdas.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Devdas</div>
+          <div class="book-author">Sarat Chandra Chattopadhay Statement mobile banking Facebook photo is photo statement twentieth</div>
+          <div class="book-price">₹107.00</div>
+        </div>
+        <div class="see-full-cell" id="indianlang-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#indianlang-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WIZARDING WORLD ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">Read your way through the wizarding world <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#wizarding-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="wizarding">
+        <div class="book-card" id="wizarding-start">
+          <div class="book-cover"><img src="images-world/harry-potter-and-the-chamber-of-secrets-5.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Harry Trotter and the Alchemist's Rock</div>
+          <div class="book-author">J. R. Rowling</div>
+          <div class="book-price">₹425.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-world/harry-potter-and-the-deathly-hallows-4.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Harry Trotter — The Complete Anthology (1-7)</div>
+          <div class="book-author">J. R. Rowling</div>
+          <div class="book-price">₹1,675.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-world/harry-potter-and-the-goblet-of-fire-5.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Harry Trotter and the Half-Faced Prince</div>
+          <div class="book-author">J. R. Rowling</div>
+          <div class="book-price">₹425.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-world/harry-potter-and-the-half-blood-prince-5.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Harry Trotter and the Cup of Ember</div>
+          <div class="book-author">J. R. Rowling</div>
+          <div class="book-price">₹425.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-world/harry-potter-and-the-philosopher-s-stone-3.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Harry Trotter and the Room of Mysteries</div>
+          <div class="book-author">J. R. Rowling</div>
+          <div class="book-price">₹425.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-world/harry-potter-the-complete-collection-1-7-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Harry Trotter and the Room of Mysteries</div>
+          <div class="book-author">J. R. Rowling</div>
+          <div class="book-price">₹425.00</div>
+        </div>
+        <div class="see-full-cell" id="wizarding-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#wizarding-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENERGIZE YOUR MIND ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">Energize your mind <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#energize-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="energize">
+        <div class="book-card" id="energize-start">
+          <div class="book-cover"><img src="images-mind/the-let-them-theory-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">How Not To Be Foolish</div>
+          <div class="book-author">Jack Rowald</div>
+          <div class="book-price">₹340.71</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-mind/digital-minimalism.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Untroubled</div>
+          <div class="book-author">Lena Ford</div>
+          <div class="book-price">₹328.24</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-mind/deep-work-2.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Steady Minds</div>
+          <div class="book-author">Yuvraj Mehta</div>
+          <div class="book-price">₹599.99</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-mind/hot-water-30.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">How to Not Die Alone</div>
+          <div class="book-author">Logan Ury</div>
+          <div class="book-price">₹736.31</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-mind/oxford-handbook-of-clinical-examination-and-practical-skills.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Craft of Thinking Big</div>
+          <div class="book-author">David Schwartz, PhD</div>
+          <div class="book-price">₹640.00</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-mind/the-jungian-shadow-work-journal.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">How to Not Die Alone</div>
+          <div class="book-author">Logan Ury</div>
+          <div class="book-price">₹736.31</div>
+        </div>
+        <div class="see-full-cell" id="energize-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#energize-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE BANNER 3 (Familiar) ============ -->
+  <section>
+    <div class="wrap">
+      <div class="feature-heading">A tale of magic and intrigue</div>
+      <div class="feature-banner feat3">
+        <div class="cover-frame"><div class="cover"><img src="images-banner/the-familiar-12.jpg" alt="Fixation book cover"></div></div>
+        <div class="info">
+          <h3>The Familiar</h3>
+          <div class="by">By Leigh Bardigo</div>
+          <div class="book-rating">★★★★☆</div>
+          <div class="desc">An instant bestseller rich with magic and intrigue, from the author of the Witches Weaving series, drawing readers into a story woven through with rival covens.</div>
+          <div class="price">₹640.96</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BETTER LIFE ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">Better life, better you <span class="chev">&rsaquo;</span></div>
+      <div class="carousel">
+        <a href="#betterlife-start" class="car-arrow car-prev">&lsaquo;</a>
+        <div class="grid5" id="betterlife">
+        <div class="book-card" id="betterlife-start">
+          <div class="book-cover"><img src="images-better/overwhelmed-22.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Healing Power of Korean Letter Writing</div>
+          <div class="book-price">₹2,613.24</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-better/you-have-always-been-enough-identify-limiting-beliefs-set-boundaries-without-guilt-regulate-your-nervous-system-and-build-a-kinder-relationship-with-yourself-in-2025.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Big Book of Energy</div>
+          <div class="book-price">₹4,318.49</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-better/episodes-23.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Reparenting the Inner Child</div>
+          <div class="book-price">₹603.22</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-better/how-to-write-romantasy-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">Manifest the Life You Love</div>
+          <div class="book-price">₹424.75</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-better/jump-and-find-joy-1.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Place That Has Never Been Vacant</div>
+          <div class="book-price">₹3,626.40</div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="images-better/the-war-of-worldviews-2.jpg" alt="Fixation book cover"></div>
+          <div class="book-title">The Place That Has Never Been Vacant</div>
+          <div class="book-price">₹3,626.40</div>
+        </div>
+        <div class="see-full-cell" id="betterlife-end"><a href="#">See full list ›</a></div>
+      </div>
+        <a href="#betterlife-end" class="car-arrow car-next">&rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / newsletter ============ -->
+  <section>
+    <div class="wrap">
+      <div class="cta-block">
+        <div class="bulb">&#128161;</div>
+        <h2>A world of reading awaits you</h2>
+        <p>Create a free BookHub account and sign up for our emails. Find out about new releases, shop deals on books, and get reading recommendations from our team.</p>
+        <a href="#" class="btn-light">Create account</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ (pure HTML/CSS accordion) ============ -->
+  <section class="faq">
+    <div class="wrap">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary><span class="arrow">›</span> What is BookHub?</summary>
+        <div class="faq-answer">BookHub is a digital reading platform offering eBooks and audiobooks across genres and languages, available on the web, mobile apps, and dedicated eReaders.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="arrow">›</span> What makes BookHub different?</summary>
+        <div class="faq-answer">BookHub focuses on a distraction-free reading experience, seamless sync across devices, and a large catalogue of regional-language titles alongside global bestsellers.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="arrow">›</span> What eBook formats does BookHub support?</summary>
+        <div class="faq-answer">BookHub natively supports EPUB, EPUB3, PDF, MOBI, JPEG, GIF, PNG, BMP, TIFF, TXT, HTML, RTF, CBZ and CBR files.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="arrow">›</span> Where can I buy BookHub-compatible eBooks?</summary>
+        <div class="faq-answer">
+          The easiest way to buy a book compatible with your BookHub Reader is to purchase directly from the BookHub store. Once you have created a BookHub account, you can sign in and browse the storefront from any device, including the Reader itself.
+          If you'd like to buy books from a third party and read them on your BookHub Reader, make sure the book is in a compatible format and free of DRM (Digital Rights Management).
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-top">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h4>All about BookHub</h4>
+            <a href="#">About BookHub</a><br>
+            <a href="#">Management Team</a><br>
+            <a href="#">BookHub in Conversation Podcast</a><br>
+            <a href="#">eRecycling Program</a><br>
+            <a href="#">Free Apps</a><br>
+            <a href="#">Web Reader</a><br>
+            <a href="#">Buy eGift Cards</a><br>
+            <a href="#">Get Help</a><br>
+            <a href="#">Sitemap</a>
+          </div>
+          <div>
+            <h4>Opportunities</h4>
+            <a href="#">Self Publish</a><br>
+            <a href="#">Affiliates</a><br>
+            <a href="#">Job Openings</a><br>
+          </div>
+          <div>
+            <h4>Latest Blog Posts</h4>
+            <a href="#">Dive into Terry Pratchett's Discworld</a><br>
+            <a href="#">Contemporary retellings of classical myt&hellip;</a><br>
+            <a href="#">Get swept up in the drama and intrigue o&hellip;</a><br>
+            <a href="#">LIVE from Ever After, with Julia McKay &amp;&hellip;</a><br>
+            <a href="#">Books for readers craving the wide-eyed &hellip;</a><br>
+            <a href="#" class="view-all-posts">View all posts</a>
+          </div>
+          <div>
+            <h4>Stay Connected</h4>
+            <a href="#" class="social-item"><span class="social-icon fb">f</span>Facebook</a><br>
+            <a href="#" class="social-item"><span class="social-icon tw">t</span>Twitter</a><br>
+            <a href="#" class="social-item"><span class="social-icon pin">p</span>Pinterest</a><br>
+            <a href="#" class="social-item"><span class="social-icon yt">&#9658;</span>Youtube</a><br>
+            <a href="#" class="social-item"><span class="social-icon ig">o</span>Instagram</a>
+          </div>
+          <div>
+            <h4>Get the Free App</h4>
+            <a href="#" class="app-badge play-badge">
+              <span class="badge-icon">&#9658;</span>
+              <span class="badge-text"><small>GET IT ON</small>Google Play</span>
+            </a>
+            <a href="#" class="app-badge store-badge">
+              <span class="badge-icon">&#63743;</span>
+              <span class="badge-text"><small>Download on the</small>App Store</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment methods row -->
+    <div class="footer-payment">
+      <span>Accepted Payment Methods:</span>
+      <div class="paylogos">
+        <span class="pay-chip visa">VISA</span>
+        <span class="pay-chip mc">Mastercard</span>
+        <span class="pay-chip brand">BookHub</span>
+        <span class="pay-chip gpay">G Pay</span>
+      </div>
+    </div>
+
+    <!-- Locale + copyright + legal links row -->
+    <div class="wrap">
+      <div class="footer-bottom">
+        <div class="locale"><span class="flag">🇮🇳</span> | English ▾</div>
+        <div class="legal-links">
+          <span>© 2026 BookHub Inc.</span>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Content Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Corporate brand strip -->
+    <div class="footer-corp">
+      <div class="wrap">
+        <div class="corp-logo">BookHub</div>
+        <div class="corp-links">
+          <a href="#">BookHub Viki</a>
+          <a href="#">BookHub Viber</a>
+          <a href="#">BookHub Global Market</a>
+          <a href="#">BookHub Travel</a>
+          <a href="#">More Services</a>
+          <a href="#">About BookHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
