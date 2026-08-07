@@ -1135,7 +1135,7 @@ footer{
 
 
 
-@media (max-width:1023px){
+@media (max-width:768px){
 
   .wrap{
     padding:0 20px;
@@ -1169,7 +1169,7 @@ footer{
 
 
 
-@media (max-width:767px){
+@media (max-width:320px){
 
   .wrap{
     padding:0 15px;
