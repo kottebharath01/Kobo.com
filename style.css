@@ -1094,48 +1094,10 @@ footer{
 }
 
 
-@media(max-width: 900px){
-  .book-card{
-    flex: 0 0 180px;
-  }
-  .footer-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .hero, .promo-strip{
-    flex-direction: column;
-  }
-  .hero-img-wrap{
-    width: 100%;
-  }
-  .mega-panel .wrap{
-    flex-direction: column;
-    gap: 24px;
-  }
-  .mega-right{
-    border-left: none;
-    padding-left: 0;
-    border-top: 1px solid rgba(0, 0, 0, .15);
-    padding-top: 20px;
-  }
-}
-
-
-
-
-@media (min-width: 1024px) {
-
-  .wrap{
-    max-width:1150px;
-    margin:0 auto;
-  }
-
-}
-
-
-
-
-
-@media (max-width:768px){
+/* =======================
+   Tablet (1024px and below)
+======================= */
+@media (max-width:1024px){
 
   .wrap{
     padding:0 20px;
@@ -1146,33 +1108,84 @@ footer{
     gap:20px;
   }
 
+  .logo{
+    width:220px;
+  }
+
   .search-bar{
     width:100%;
     order:3;
+  }
+
+  .header-icons{
+    margin-left:auto;
+  }
+
+  .hero,
+  .promo-strip,
+  .feature-banner{
+    flex-direction:column;
+  }
+
+  .hero-copy,
+  .promo-copy,
+  .feature-banner .info{
+    padding:25px;
+  }
+
+  .hero-img-wrap,
+  .promo-img-wrap{
+    width:100%;
+  }
+
+  .feature-banner .cover-frame{
+    width:100%;
+    height:auto;
+    padding:25px;
+  }
+
+  .mega-panel{
+    width:100%;
+    left:0 !important;
+  }
+
+  .mega-panel .wrap{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:25px;
+  }
+
+  .mega-right{
+    width:100%;
+    border-left:none;
+    border-top:1px solid #ddd;
+    padding-left:0;
+    padding-top:20px;
   }
 
   .footer-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .hero{
-    flex-direction:column;
-  }
-
   .book-card{
     flex:0 0 180px;
+    max-width:180px;
   }
 
 }
 
 
-
-
-
-@media (max-width:320px){
+/* =======================
+   Mobile (768px and below)
+======================= */
+@media (max-width:768px){
 
   .wrap{
     padding:0 15px;
+  }
+
+  .topbar{
+    display:none;
   }
 
   header.main .wrap{
@@ -1181,42 +1194,83 @@ footer{
   }
 
   .logo{
-    width:200px;
-    margin:auto;
+    width:180px;
+    margin:0 auto;
   }
 
   .search-bar{
     width:100%;
+    height:45px;
   }
 
   .header-icons{
     justify-content:center;
     flex-wrap:wrap;
-    gap:18px;
+    gap:15px;
   }
 
-  .cat-nav .wrap{
-    overflow-x:auto;
-  }
-
+  .cat-nav .wrap,
   .sub-links .wrap{
     overflow-x:auto;
+    white-space:nowrap;
+    scrollbar-width:none;
   }
 
-  .hero{
-    flex-direction:column;
+  .cat-nav .wrap::-webkit-scrollbar,
+  .sub-links .wrap::-webkit-scrollbar{
+    display:none;
   }
 
   .hero-copy{
     padding:20px;
+    text-align:center;
   }
 
-  .hero-copy h1{
+  .hero-copy h2{
     font-size:30px;
+  }
+
+  .hero-copy .btn-light,
+  .btn-outline{
+    align-self:center;
+  }
+
+  .hero-img-grid{
+    width:100%;
+    grid-auto-rows:90px;
+  }
+
+  .promo-strip{
+    padding:20px;
+  }
+
+  .promo-copy h2{
+    font-size:28px;
+  }
+
+  .feature-banner .cover-frame{
+    padding:20px;
+  }
+
+  .feature-banner .cover{
+    width:170px;
+    height:255px;
+  }
+
+  .feature-banner .info{
+    padding:20px;
+    text-align:center;
   }
 
   .footer-grid{
     grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .footer-payment{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
   }
 
   .footer-bottom{
@@ -1226,12 +1280,57 @@ footer{
   }
 
   .legal-links{
+    justify-content:center;
     flex-wrap:wrap;
+  }
+
+  .footer-corp .wrap{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .corp-logo{
+    width:200px;
+    padding:20px 0;
+  }
+
+  .corp-links{
     justify-content:center;
   }
 
   .book-card{
     flex:0 0 150px;
+    max-width:150px;
+  }
+
+}
+
+
+/* =======================
+   Small Mobiles (480px and below)
+======================= */
+@media (max-width:480px){
+
+  .hero-copy h2{
+    font-size:24px;
+  }
+
+  .promo-copy h2{
+    font-size:22px;
+  }
+
+  .section-title{
+    font-size:18px;
+  }
+
+  .book-card{
+    flex:0 0 130px;
+    max-width:130px;
+  }
+
+  .feature-banner .cover{
+    width:140px;
+    height:210px;
   }
 
 }
